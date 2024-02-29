@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@tuya/tuya-connector-nodejs": "^2.1.2",
+    "winston": "^3.11.0"
+  }
+}
