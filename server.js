@@ -40,7 +40,7 @@ async function TuyaRequest(method, path, body = {}) {
 // **Infinite loop with error handling and defined polling interval (replace 5000 with your desired interval in milliseconds):**
 async function main() {
   try {
-    while (true) {
+    
       const method = 'GET';
       const url = `/v2.0/cloud/thing/d778e9d9d7d0ebefcf4aiq/shadow/properties`;
 
@@ -49,7 +49,7 @@ async function main() {
       console.log(data); // Example usage, replace with your logic
 
       await new Promise(resolve => setTimeout(resolve, 5000)); // Wait 5 seconds before next request
-    }
+    
   } catch (error) {
     logger.error('An error occurred:', error.message);
     // Handle the error here (e.g., restart loop after a delay)
